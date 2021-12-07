@@ -17,6 +17,7 @@
 		75322554275EC491008075F0 /* SwiftAndPHPSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75322553275EC491008075F0 /* SwiftAndPHPSampleUITests.swift */; };
 		75322556275EC491008075F0 /* SwiftAndPHPSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75322555275EC491008075F0 /* SwiftAndPHPSampleUITestsLaunchTests.swift */; };
 		75322563275EC67E008075F0 /* MySQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75322562275EC67E008075F0 /* MySQL.swift */; };
+		75322568275F2A18008075F0 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75322567275F2A18008075F0 /* Todo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		75322553275EC491008075F0 /* SwiftAndPHPSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAndPHPSampleUITests.swift; sourceTree = "<group>"; };
 		75322555275EC491008075F0 /* SwiftAndPHPSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAndPHPSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		75322562275EC67E008075F0 /* MySQL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySQL.swift; sourceTree = "<group>"; };
+		75322567275F2A18008075F0 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +103,9 @@
 		75322531275EC490008075F0 /* SwiftAndPHPSample */ = {
 			isa = PBXGroup;
 			children = (
+				75322566275F29FF008075F0 /* Todo */,
 				75322532275EC490008075F0 /* AppDelegate.swift */,
 				75322534275EC490008075F0 /* SceneDelegate.swift */,
-				75322536275EC490008075F0 /* ViewController.swift */,
-				75322562275EC67E008075F0 /* MySQL.swift */,
-				75322538275EC490008075F0 /* Main.storyboard */,
 				7532253B275EC490008075F0 /* Assets.xcassets */,
 				7532253D275EC490008075F0 /* LaunchScreen.storyboard */,
 				75322540275EC490008075F0 /* Info.plist */,
@@ -128,6 +128,41 @@
 				75322555275EC491008075F0 /* SwiftAndPHPSampleUITestsLaunchTests.swift */,
 			);
 			path = SwiftAndPHPSampleUITests;
+			sourceTree = "<group>";
+		};
+		75322566275F29FF008075F0 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				75322569275F2A58008075F0 /* Model */,
+				7532256A275F2A69008075F0 /* View */,
+				7532256B275F2A78008075F0 /* Controller */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		75322569275F2A58008075F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75322567275F2A18008075F0 /* Todo.swift */,
+				75322562275EC67E008075F0 /* MySQL.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7532256A275F2A69008075F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75322538275EC490008075F0 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7532256B275F2A78008075F0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				75322536275EC490008075F0 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +300,7 @@
 				75322537275EC490008075F0 /* ViewController.swift in Sources */,
 				75322533275EC490008075F0 /* AppDelegate.swift in Sources */,
 				75322535275EC490008075F0 /* SceneDelegate.swift in Sources */,
+				75322568275F2A18008075F0 /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

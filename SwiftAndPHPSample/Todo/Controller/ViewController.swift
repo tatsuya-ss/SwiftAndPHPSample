@@ -9,7 +9,8 @@ import UIKit
 
 final class ViewController: UIViewController {
     
-    @IBOutlet private weak var displayLabel: UILabel!
+    @IBOutlet private weak var todoLabel: UILabel!
+    @IBOutlet private weak var deadlineLabel: UILabel!
     
     private let mySQLProtocol: MySQLProtocol = MySQL()
     
@@ -22,9 +23,11 @@ final class ViewController: UIViewController {
         Task {
             do {
                 let result = try await mySQLProtocol.fetch()
-                displayLabel.text = result
+                todoLabel.text = result.todo
+                deadlineLabel.text = result.deadline
+                
             } catch {
-                displayLabel.text = error.localizedDescription
+                todoLabel.text = error.localizedDescription
             }
         }
     }
