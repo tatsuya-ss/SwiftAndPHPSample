@@ -24,7 +24,7 @@ final class ViewController: UIViewController {
                 let result = try await mySQLProtocol.fetch()
                 displayLabel.text = result
             } catch {
-                print(error)
+                displayLabel.text = error.localizedDescription
             }
         }
     }
