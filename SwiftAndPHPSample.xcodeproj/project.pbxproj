@@ -16,6 +16,7 @@
 		7532254A275EC491008075F0 /* SwiftAndPHPSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75322549275EC491008075F0 /* SwiftAndPHPSampleTests.swift */; };
 		75322554275EC491008075F0 /* SwiftAndPHPSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75322553275EC491008075F0 /* SwiftAndPHPSampleUITests.swift */; };
 		75322556275EC491008075F0 /* SwiftAndPHPSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75322555275EC491008075F0 /* SwiftAndPHPSampleUITestsLaunchTests.swift */; };
+		75322563275EC67E008075F0 /* MySQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75322562275EC67E008075F0 /* MySQL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7532254F275EC491008075F0 /* SwiftAndPHPSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftAndPHPSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75322553275EC491008075F0 /* SwiftAndPHPSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAndPHPSampleUITests.swift; sourceTree = "<group>"; };
 		75322555275EC491008075F0 /* SwiftAndPHPSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAndPHPSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		75322562275EC67E008075F0 /* MySQL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySQL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				75322532275EC490008075F0 /* AppDelegate.swift */,
 				75322534275EC490008075F0 /* SceneDelegate.swift */,
 				75322536275EC490008075F0 /* ViewController.swift */,
+				75322562275EC67E008075F0 /* MySQL.swift */,
 				75322538275EC490008075F0 /* Main.storyboard */,
 				7532253B275EC490008075F0 /* Assets.xcassets */,
 				7532253D275EC490008075F0 /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75322563275EC67E008075F0 /* MySQL.swift in Sources */,
 				75322537275EC490008075F0 /* ViewController.swift in Sources */,
 				75322533275EC490008075F0 /* AppDelegate.swift in Sources */,
 				75322535275EC490008075F0 /* SceneDelegate.swift in Sources */,

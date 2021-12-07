@@ -7,13 +7,27 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+final class ViewController: UIViewController {
+    
+    @IBOutlet private weak var displayLabel: UILabel!
+    
+    private let mySQLProtocol: MySQLProtocol = MySQL()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
     }
-
-
+    
+    @IBAction private func didTapRefreshButton(_ sender: Any) {
+        Task {
+            do {
+                let result = try await mySQLProtocol.fetch()
+                displayLabel.text = result
+            } catch {
+                print(error)
+            }
+        }
+    }
+    
 }
 
