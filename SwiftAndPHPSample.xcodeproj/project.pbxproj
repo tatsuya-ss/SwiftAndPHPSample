@@ -18,6 +18,8 @@
 		75322556275EC491008075F0 /* SwiftAndPHPSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75322555275EC491008075F0 /* SwiftAndPHPSampleUITestsLaunchTests.swift */; };
 		75322563275EC67E008075F0 /* MySQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75322562275EC67E008075F0 /* MySQL.swift */; };
 		75322568275F2A18008075F0 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75322567275F2A18008075F0 /* Todo.swift */; };
+		757B8CD32762DBF600C8DC5F /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757B8CD12762DBF600C8DC5F /* TodoTableViewCell.swift */; };
+		757B8CD42762DBF600C8DC5F /* TodoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 757B8CD22762DBF600C8DC5F /* TodoTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		75322555275EC491008075F0 /* SwiftAndPHPSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAndPHPSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		75322562275EC67E008075F0 /* MySQL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySQL.swift; sourceTree = "<group>"; };
 		75322567275F2A18008075F0 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		757B8CD12762DBF600C8DC5F /* TodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
+		757B8CD22762DBF600C8DC5F /* TodoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				75322538275EC490008075F0 /* Main.storyboard */,
+				757B8CD02762DBDB00C8DC5F /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,6 +168,15 @@
 				75322536275EC490008075F0 /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		757B8CD02762DBDB00C8DC5F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				757B8CD12762DBF600C8DC5F /* TodoTableViewCell.swift */,
+				757B8CD22762DBF600C8DC5F /* TodoTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +286,7 @@
 				7532253F275EC490008075F0 /* LaunchScreen.storyboard in Resources */,
 				7532253C275EC490008075F0 /* Assets.xcassets in Resources */,
 				7532253A275EC490008075F0 /* Main.storyboard in Resources */,
+				757B8CD42762DBF600C8DC5F /* TodoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +314,7 @@
 				75322563275EC67E008075F0 /* MySQL.swift in Sources */,
 				75322537275EC490008075F0 /* ViewController.swift in Sources */,
 				75322533275EC490008075F0 /* AppDelegate.swift in Sources */,
+				757B8CD32762DBF600C8DC5F /* TodoTableViewCell.swift in Sources */,
 				75322535275EC490008075F0 /* SceneDelegate.swift in Sources */,
 				75322568275F2A18008075F0 /* Todo.swift in Sources */,
 			);
