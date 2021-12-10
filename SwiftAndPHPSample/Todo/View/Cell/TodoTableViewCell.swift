@@ -7,7 +7,13 @@
 
 import UIKit
 
-class TodoTableViewCell: UITableViewCell {
+final class TodoTableViewCell: UITableViewCell {
+
+    @IBOutlet private weak var todoLabel: UILabel!
+    @IBOutlet private weak var deadlineLabel: UILabel!
+    
+    static var identifier: String { String(describing: self) }
+    static var nib: UINib { UINib(nibName: String(describing: self), bundle: nil) }
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -18,6 +24,11 @@ class TodoTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func configure(todo: Todo) {
+        todoLabel.text = todo.todo
+        deadlineLabel.text = todo.deadline + "まで"
     }
     
 }
