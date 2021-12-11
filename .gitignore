@@ -4,3 +4,7 @@ Pods/*
 *xcdebugger
 xcschemes/*
 */Desktop/swift/SQL/SwiftAndPHPSample/Web/vendor/*
+
+#### composer
+Web/.env
+Web/vendor/
